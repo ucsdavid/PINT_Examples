@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="firststyle.css">
+
+</head>
+
+<body>
+	<div id="chartDiv"></div>
+		<script>
+			var chartData = 
+			{
+				type: "bar",
+				plot: { "animation": {
+					effect: "ANIMATION_UNFOLD_HORIZONTAL", speed: "5"}
+					},
+				title: {text: "My First Chart"},
+				"scale-x": {
+					values: ["Apple", "Android", "Pandora", "Spotify"]
+				},
+				legend: {},
+				series:[ 
+					{ values:[72, 42, 67, 100],
+						text:"YES"},
+					{ values:[28,58,33,0],
+						text:"NO"}
+				]
+			};
+
+			zingchart.render({
+				id: "chartDiv",
+				data: chartData,
+				height: 400,
+				width: 600
+		});
+		</script>
+<div>
+<p class="info"> 
+	This chart shows the data collected from a study of 100 local College students. These students were surveyed during the Winter quarter of 2017. All students were voluntary participants and were not paid to participate in this study.
+</p>
+</div>
+<div>
+<p> * This study is completely made up. No data was collected to stupport the graphs above</p>
+</div>
+
+
+</body>
+</html>
