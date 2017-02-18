@@ -1,0 +1,68 @@
+body{
+	background-color: #ffaf00;
+	
+}
+h1{
+	position: center;
+
+	font-size: 45px;
+}
+
+h1 p {
+	font-size: 35px;
+	font-color:White;
+}
+
+li{
+	font-size: 30px;
+}
+
+
+
+#chartDiv{
+	float: left;
+}
+
+#Heading{
+	padding:3%;
+	background-color: #d53c00;
+	
+}
+
+#Part1{
+	width: 50%;
+	display: table-cell;
+}
+
+#Nav{
+	list-style-type: none;
+	margin: 0px;
+	padding: 2%;
+	background-color: #e68700;
+	text-align: center;
+}
+
+#Nav2{
+	display: inline;
+	padding: 5%;
+}
+
+#NavImg{
+	display: inline-block;
+	width: 40%;
+	height: 20%;
+	margin-left: 55%;
+	margin-top: -10%;
+}
+
+#icon{
+	display: inline-block;
+	width: 20%;
+	padding-left: 10%;
+
+}
+
+li a:hover{
+	background-color: #555;
+	color: white;
+}

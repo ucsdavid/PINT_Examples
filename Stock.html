@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stockstyle.css">
+</head>
+<title> Stock Watch Alert</title>
+
+<div>
+<h1 id="Heading"><center>Basics to Starting Your own Portfolio</center>
+<p>Quick start to Purchasing Stocks</p>
+<div ><img id="NavImg" src="pic/stock.jpeg"></div>
+</h1>
+</div>
+
+<body>
+	<ul id="Nav">
+		<li id="Nav2"><a href="#Home">Home</a></li>
+		<li id="Nav2"><a href="#StockNews">Stock News</a></li>
+		<li id="Nav2"><a href="#Economy">Economy</a></li>
+		<li id="Nav2"><a href="#RealEstate">Real Estate</a></li>
+
+	</ul>
+
+<div style="width: 100%"; display: "table";>
+	<div style= "display:table-row">
+	<div id="Part1"> 
+		<h1><center>What You Will Need</center></h1>
+		<li>
+			<ul>Smart Phone
+				<img id="icon" src="pic/phone.png">
+			</ul>
+
+		</li>
+		<li>	
+			<ul>Robinhood App
+				<img id="icon" src="pic/RH.jpeg">
+			</ul>
+		</li>
+		<li>	
+			<ul>Active Checking Account
+				<img id="icon" src="pic/check.png">
+			</ul>
+
+		</li>
+		<div>
+		<h2><center>3 Simple things will get you making money fast!</center></h2>
+
+	
+	<h3>Once you have download the app and connected you checking account you are ready to GO!
+	<br>Begin searching for you favoirte companies and start investing</h3>
+</div>
+</div>
+	
+<div id="Part1">
+	<h1> <center>Best way to keep track of your options</center></h1>
+	<h2>I suggest graphing your potential stock options by their weekly average. This will give you a good sense of how things are going. 
+	</h2>
+	<h3><strong>ZingChart</strong> offers a great way to create graphical representation of your stock data. For those of you that are a bit Tech Savy</h3>
+
+	<div id="chartDiv"></div>
+		<script>
+			var chartData =
+			{
+				type: "line",
+				title: {text:"Tech Stock Watch"},
+
+				"labels":[
+					{
+						"text":"Price Per Share",
+						"font-size":"20",
+						"x":"0%",
+						"y":"7%"
+					},
+					{
+						"text":"Data started Jan 1, 2017",
+						"font-size":"15",
+						"x":"67%",
+						"y":"67%"
+					}
+				],
+
+				"scale-y":{
+					"decimals":2, 
+					"format":"$%v",
+							},
+				"scale-x":{
+					"format": "Week %v"
+				},
+				legend:{
+					 "y":"77%",
+					 "x":"4%"
+
+				},
+				plotarea:{
+					"margin-bottom":"40%"
+				},
+
+				"plot":{
+					"animation":{
+						"effect":"5",
+						"delay":"1000"
+					},
+				},
+				series:[
+					{values:[9.95,9.52,8.94,8.94,8.96,8.97,9.11],
+						text:"GoPro"},
+					{values:[3.98,3.86,3.74,3.60,3.49,3.54,3.53],
+						text:"Groupon"},
+					{values:[8.81, 9.61, 10.64, 11.26, 11.72, 11.40,11.18],
+						text:"Advanced Micro Devices, Inc"}
+				]
+
+			};
+
+
+			zingchart.render({
+				id: "chartDiv",
+				data: chartData,
+				height: 400,
+				width: 600
+
+			});
+		</script>
+	</div>
+</div>
+</div>
+
+</body>
+
+
+</html>
